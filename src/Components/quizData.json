@@ -1,52 +1,27 @@
 [
   {
-    "question": "What is the capital of France?",
-    "options": ["Paris", "London", "Berlin", "Madrid"],
-    "correctAnswer": "Paris"
+    "question": "What is the holy book of Islam?",
+    "options": ["Quran", "Bible", "Torah", "Gita"],
+    "correctAnswer": "Quran"
   },
   {
-    "question": "Which planet is known as the Red Planet?",
-    "options": ["Mars", "Venus", "Jupiter", "Saturn"],
-    "correctAnswer": "Mars"
+    "question": "Who is considered the last prophet in Islam?",
+    "options": ["Moses", "Jesus", "Muhammad", "Abraham"],
+    "correctAnswer": "Muhammad"
   },
   {
-    "question": "What is the largest mammal in the world?",
-    "options": ["Elephant", "Blue Whale", "Giraffe", "Hippopotamus"],
-    "correctAnswer": "Blue Whale"
+    "question": "In which city is the Kaaba located?",
+    "options": ["Medina", "Jerusalem", "Cairo", "Mecca"],
+    "correctAnswer": "Mecca"
   },
   {
-    "question": "Who wrote the play 'Romeo and Juliet'?",
-    "options": ["Charles Dickens", "William Shakespeare", "Jane Austen", "Leo Tolstoy"],
-    "correctAnswer": "William Shakespeare"
+    "question": "What is the fasting month during which Muslims observe Ramadan?",
+    "options": ["Shawwal", "Dhu al-Hijjah", "Muharram", "Ramadan"],
+    "correctAnswer": "Ramadan"
   },
   {
-    "question": "Which gas do plants absorb from the atmosphere?",
-    "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
-    "correctAnswer": "Carbon Dioxide"
-  },
-  {
-    "question": "What is the chemical symbol for the element gold?",
-    "options": ["Go", "Gd", "Au", "Ag"],
-    "correctAnswer": "Au"
-  },
-  {
-    "question": "Who is the author of 'To Kill a Mockingbird'?",
-    "options": ["George Orwell", "J.K. Rowling", "Harper Lee", "F. Scott Fitzgerald"],
-    "correctAnswer": "Harper Lee"
-  },
-  {
-    "question": "Which continent is the driest in terms of rainfall?",
-    "options": ["Asia", "Africa", "Australia", "Antarctica"],
-    "correctAnswer": "Antarctica"
-  },
-  {
-    "question": "What is the largest organ in the human body?",
-    "options": ["Heart", "Brain", "Liver", "Skin"],
-    "correctAnswer": "Skin"
-  },
-  {
-    "question": "Which gas is most abundant in Earth's atmosphere?",
-    "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
-    "correctAnswer": "Nitrogen"
+    "question": "What is the first pillar of Islam?",
+    "options": ["Hajj", "Salah (Prayer)", "Zakat (Charity)", "Shahada (Faith)"],
+    "correctAnswer": "Shahada (Faith)"
   }
 ]
