@@ -22,6 +22,7 @@
   {
     "question": "What is the first pillar of Islam?",
     "options": ["Hajj", "Salah (Prayer)", "Zakat (Charity)", "Shahada (Faith)"],
-    "correctAnswer": "Shahada (Faith)"
+    "correctAnswer": "Salah (Prayer)"
+    
   }
 ]
