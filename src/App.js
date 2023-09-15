@@ -2,7 +2,7 @@ import './App.css';
 import { Route, BrowserRouter, Routes} from 'react-router-dom';
 import Home from './Components/Home';
 import Quiaz from './Components/Quiaz';
-// import Test from './Components/Test'
+
 
 function App() {
   return (

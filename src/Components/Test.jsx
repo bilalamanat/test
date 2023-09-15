@@ -7,9 +7,9 @@ import quizData from './quizData.json';
 function QuizApp() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
-  const [timer, setTimer] = useState(15);
+  const [timer, setTimer] = useState(10);
   const [showScore, setShowScore] = useState(false);
-  const [isConfettiActive, setIsConfettiActive] = useState(false); // State for controlling confetti
+  const [isConfettiActive, setIsConfettiActive] = useState(false); 
 
   useEffect(() => {
     const countdown = setInterval(() => {
@@ -29,7 +29,7 @@ function QuizApp() {
   const handleNextQuestion = () => {
     if (currentQuestion < quizData.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
-      setTimer(30);
+      setTimer(10);
     } else {
       handleEndOfQuiz();
     }
@@ -38,7 +38,7 @@ function QuizApp() {
   useEffect(() => {
     if (timer === 0 && currentQuestion < quizData.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
-      setTimer(30);
+      setTimer(10);
     }
   }, [timer, currentQuestion]);
 
@@ -59,7 +59,7 @@ function QuizApp() {
 
   const handleEndOfQuiz = () => {
     setShowScore(true);
-    setIsConfettiActive(true); // Activate confetti when the quiz is completed
+    setIsConfettiActive(true); 
   };
 
   return (
@@ -70,7 +70,7 @@ function QuizApp() {
         <>
           <h2>Congratulations! Your task is completed!</h2>
           <p>Your score: {score}</p>
-          {isConfettiActive && <Confetti />} {/* Display confetti when active */}
+          {isConfettiActive && <Confetti />} 
         </>
       ) : (
         <>
