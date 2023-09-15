@@ -7,7 +7,7 @@ import quizData from './quizData.json';
 function QuizApp() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
-  const [timer, setTimer] = useState(10);
+  const [timer, setTimer] = useState(30);
   const [showScore, setShowScore] = useState(false);
   const [isConfettiActive, setIsConfettiActive] = useState(false); 
 
@@ -29,7 +29,7 @@ function QuizApp() {
   const handleNextQuestion = () => {
     if (currentQuestion < quizData.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
-      setTimer(10);
+      setTimer(30);
     } else {
       handleEndOfQuiz();
     }
@@ -38,7 +38,7 @@ function QuizApp() {
   useEffect(() => {
     if (timer === 0 && currentQuestion < quizData.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
-      setTimer(10);
+      setTimer(30);
     }
   }, [timer, currentQuestion]);
 
