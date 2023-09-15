@@ -3,28 +3,65 @@
   text-align: center;
 }
 
-.quiz button {
-  background-color: #3498db; /* Default button background color */
-  color: #fff; /* Default button text color */
+/* styles.css */
+
+/* Style for quiz container */
+.quiz {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+/* Style for question */
+.quiz h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+/* Style for options */
+.options button {
+  font-size: 1rem;
   padding: 10px 20px;
   margin: 5px;
+  background-color: #007bff;
+  color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.1s ease; /* Add a smooth transition effect */
+}
+
+.options button:hover {
+  background-color: #0056b3;
+}
+
+/* Style for "Next" button */
+.quiz button {
+  font-size: 1rem;
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .quiz button:hover {
-  background-color: #2980b9; /* Button background color on hover */
-  transform: scale(1.05); /* Add a slight zoom-in effect on hover */
+  background-color: #1e7e34;
 }
 
-/* Style for correct answer button */
-.quiz button.correct {
-  background-color: #27ae60; /* Correct answer button background color */
+/* Style for the quiz completion message */
+.quiz h2.quiz-completed {
+  font-size: 1.5rem;
+  color: #28a745;
 }
 
-/* Style for incorrect answer button */
-.quiz button.incorrect {
-  background-color: #e74c3c; /* Incorrect answer button background color */
+/* Style for the score */
+.quiz p.score {
+  font-size: 1.25rem;
+  margin-top: 10px;
+  color: #333;
 }

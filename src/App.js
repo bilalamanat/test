@@ -1,21 +1,19 @@
-
-
-import Confetti from 'react-confetti';
 import './App.css';
-
-import Test from './Components/Test'
-
-
-
-
+import { Route, BrowserRouter, Routes} from 'react-router-dom';
+import Home from './Components/Home';
+import Quiaz from './Components/Quiaz';
+// import Test from './Components/Test'
 
 function App() {
   return (
     <div className="App">
-     <Test />
-   <Confetti />
-   
-   
+    
+      <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/quiaz' element={<Quiaz />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

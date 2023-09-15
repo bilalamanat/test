@@ -69,7 +69,7 @@ function QuizApp() {
   return (
     <div className="quiz">
   
-      <h1>My Test Today</h1>
+      
       <h1>App For Questions</h1>
       <p>Timer: {timer} seconds</p>
       {currentQuestion < quizData.length ? (
