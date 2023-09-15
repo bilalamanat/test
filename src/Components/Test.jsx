@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
+import Confetti from 'react-confetti'; 
 import 'react-toastify/dist/ReactToastify.css';
 import quizData from './quizData.json';
 
@@ -7,7 +8,8 @@ function QuizApp() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
   const [timer, setTimer] = useState(15);
-  const [showScore, setShowScore] = useState(false); 
+  const [showScore, setShowScore] = useState(false);
+  const [isConfettiActive, setIsConfettiActive] = useState(false); // State for controlling confetti
 
   useEffect(() => {
     const countdown = setInterval(() => {
@@ -56,20 +58,19 @@ function QuizApp() {
   };
 
   const handleEndOfQuiz = () => {
-    setShowScore(true); 
-    // toast.info('Quiz completed!', { autoClose: 2000 });
-    // Display a congratulatory message when the quiz is completed
-    // toast.success('Congratulations! Your task is completed!', { autoClose: 2000 });
+    setShowScore(true);
+    setIsConfettiActive(true); // Activate confetti when the quiz is completed
   };
 
   return (
     <div className="quiz">
       <h1>App For Questions</h1>
       {!showScore && <p>Timer: {timer} seconds</p>}
-      {showScore ? ( 
+      {showScore ? (
         <>
           <h2>Congratulations! Your task is completed!</h2>
           <p>Your score: {score}</p>
+          {isConfettiActive && <Confetti />} {/* Display confetti when active */}
         </>
       ) : (
         <>

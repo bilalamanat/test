@@ -8,7 +8,7 @@ function Quiaz() {
   return (
     <div>
       <Test />
-      <Confetti />
+      {/* <Confetti /> */}
      
      
 
