@@ -1,19 +1,22 @@
 import './App.css';
-import { Route, BrowserRouter, Routes} from 'react-router-dom';
-import Home from './Components/Home';
-import Quiaz from './Components/Quiaz';
+// import { Route, BrowserRouter, Routes} from 'react-router-dom';
+// import Home from './Components/Home';
+// import Quiaz from './Components/Quiaz';
+// import Test from './Components/Test'
+import Test from './Components/Test'
 
 
 function App() {
   return (
     <div className="App">
+      <Test />
     
-      <BrowserRouter>
+      {/* <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/quiaz' element={<Quiaz />} />
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
     </div>
   );
 }
