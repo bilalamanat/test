@@ -3,6 +3,7 @@
 /* Styles for the whole application */
 .App {
   text-align: center;
+  background-image: url(../public/img/13338.jpg);
 }
 
 /* Styles for the quiz container */
@@ -113,3 +114,4 @@ button:hover {
   color: #fff; /* Change to your desired hover text color */
   border-radius: 10px;
 }
+
